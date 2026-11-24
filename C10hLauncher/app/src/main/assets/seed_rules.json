@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "note": "种子规则：商店/OTA/遥测默认开；NTP 默认关；TMC/电信遥测域待 DNS 命中日志摸清后补入（默认关）",
+  "pending": ["crashset-10-domains", "tmc-cloud", "telecom-telemetry"],
+  "rules": [
+    {"type": "domain", "value": "stpres.189smarthome.com", "on": true, "note": "商店CDN"},
+    {"type": "domain", "value": "app.jutong-tech.cn", "on": true, "note": "商店API"},
+    {"type": "domain", "value": "appcontrol.itv.cmvideo.cn", "on": true, "note": "装包鉴权"},
+    {"type": "domain", "value": "app.mobeehome.cn", "on": true, "note": "商店辅助"},
+    {"type": "domain", "value": "vnet-ping.ctseelink.cn", "on": true, "note": "商店存活探测"},
+    {"type": "domain", "value": "appmarket.zhongping.jsinfo.net", "on": true, "note": "商店兜底"},
+    {"type": "domain", "value": "update.itv.cmvideo.cn", "on": true, "note": "OTA升级（独立火源）"},
+    {"type": "domain", "value": "ntp.aliyun.com", "on": false, "note": "NTP旁路（默认关）"},
+    {"type": "domain", "value": "ntp.tencent.com", "on": false, "note": "NTP旁路（默认关）"},
+    {"type": "domain", "value": "time.baidu.com", "on": false, "note": "NTP旁路（默认关）"}
+  ]
+}

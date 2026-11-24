@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 纯 vector 图标：无 PNG，体积最小；aapt2 直接内联进 APK -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 深色圆角底板 -->
+    <path
+        android:fillColor="#FF132433"
+        android:pathData="M9,3 h30 a6,6 0 0 1 6,6 v30 a6,6 0 0 1 -6,6 h-30 a6,6 0 0 1 -6,-6 v-30 a6,6 0 0 1 6,-6 z" />
+
+    <!-- 「C」形：右侧开口的开口环 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF3DDC97"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:pathData="M33.5,16 A11.5,11.5 0 1 0 33.5,32" />
+
+    <!-- 「H」竖杠点缀，呼应 C10H -->
+    <path
+        android:fillColor="#FF3DDC97"
+        android:pathData="M36.6,19 h2.4 v10 h-2.4 z" />
+</vector>

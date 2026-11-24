@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 窗口透壁纸（规格 §6.1）：windowShowWallpaper + 半透明启动背景。
+         半透明 = 冷启动短暂看到壁纸而非白屏（仍满足 <500ms 无白闪，规格 §1）。
+         导航条/固定栏在 Java 侧保持独立，内容层叠暗色 scrim 保图标可读。 -->
+    <style name="LauncherTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">#66101B26</item>
+        <item name="android:colorBackground">#FF0E1620</item>
+        <item name="android:navigationBarColor">#FF16222E</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <!-- 自研设置：AOSP Settings（android-9.0.0_r61）浅色主题。
+         colorPrimary=grey_100、colorAccent=blue_700、窗口底=colorBackground、
+         浅色状态栏（深色图标）、黑色三键导航栏。仅 MainActivity 透壁纸，规格 §9。 -->
+    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">#FFFFFFFF</item>
+        <item name="android:colorBackground">#FFFFFFFF</item>
+        <item name="android:colorPrimary">#FFF5F5F5</item>
+        <item name="android:colorPrimaryDark">#FFE0E0E0</item>
+        <item name="android:colorAccent">#FF1976D2</item>
+        <item name="android:statusBarColor">#FFF5F5F5</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#FF000000</item>
+        <item name="android:alertDialogTheme">@style/SettingsDialogTheme</item>
+    </style>
+
+    <!-- 最近任务：透壁纸 + 黑色半透明遮罩（AOSP Recents 观感）。 -->
+    <style name="RecentsTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">#FF000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- AOSP Settings 对话框：浅色、accent 蓝色按钮，与页面主题一致。 -->
+    <style name="SettingsDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+        <item name="android:colorAccent">#FF1976D2</item>
+        <item name="android:colorPrimary">#FFFFFFFF</item>
+    </style>
+
+    <!-- 均衡器宿主：透明窗口，仅承载深色 EqPanel 对话框。 -->
+    <style name="EqDialogTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:navigationBarColor">#FF000000</item>
+        <item name="android:statusBarColor">#FF000000</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">C10H 桌面</string>
+
+    <string name="quick_eq">音效</string>
+    <string name="quick_settings">设置</string>
+    <string name="quick_uninstall">卸载管理</string>
+
+    <string name="nav_back">返回</string>
+    <string name="nav_home">主页</string>
+    <string name="nav_recents">最近任务</string>
+    <string name="nav_toggle_on">导航栏 开</string>
+    <string name="nav_toggle_off">导航栏 关</string>
+
+    <string name="menu_uninstall">卸载</string>
+    <string name="menu_appinfo">应用信息</string>
+
+    <string name="drawer_apps">应用</string>
+    <string name="menu_fixed_remove">从固定栏移除</string>
+    <string name="menu_remove_desktop">从桌面移除</string>
+</resources>

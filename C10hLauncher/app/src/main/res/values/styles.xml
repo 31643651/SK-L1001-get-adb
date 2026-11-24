@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FolderDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/folder_open</item>
+        <item name="android:windowExitAnimation">@anim/folder_close</item>
+    </style>
+</resources>
